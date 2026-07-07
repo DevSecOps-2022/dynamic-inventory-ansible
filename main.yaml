@@ -2,14 +2,14 @@
   hosts: frontend
   become: yes
   tasks:
-    - name: pinging all hosts
-      ping:
-    - name: instlling nginx
-      package:
-        name: nginx
-        state: present
-    - name: start & enable nginx
-      service:
-        name: nginx
-        state: restarted
-        enabled: yes
+  - name: pinging all hosts
+    ping:
+  - name: instlling nginx
+    package:
+      name: nginx
+      state: present
+  - name: start & enable nginx
+    service:
+      name: nginx
+      state: restarted
+      enabled: yes
