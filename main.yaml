@@ -1,0 +1,7 @@
+- name: tetsing dynamic inventory
+  hosts: all
+  become: yes
+  tasks:
+    - name: pinging all hosts
+      ping:
+      
