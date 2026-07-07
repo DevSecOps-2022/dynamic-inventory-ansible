@@ -6,6 +6,9 @@ hostnames:
   - private-ip-address
 filters:
   tag:Name: frontend
+  instance-state-name: running
 keyed_groups:
   - key: tags.Name
     seperator: ''
+    prefix: ''
+    leading_underscore: false
