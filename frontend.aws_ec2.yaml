@@ -4,3 +4,8 @@ regions:
 hostnames:
   # This option allows displaying the public ip addresses.
   - ip-address
+filters:
+  tag:Name: frontend
+keyed_groups:
+  - key: tags:Name
+    seperator: ''
