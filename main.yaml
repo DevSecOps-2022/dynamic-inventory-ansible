@@ -1,5 +1,6 @@
-# - name: tetsing dynamic inventory
-#   hosts: all
+- name: tetsing dynamic inventory
+  hosts: local
+  connection: local
 #   become: yes
 #   tasks:
 #     - name: pinging all hosts
