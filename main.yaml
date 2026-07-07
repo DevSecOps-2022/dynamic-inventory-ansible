@@ -1,6 +1,7 @@
 - name: tetsing dynamic inventory
   hosts: frontend
   become: yes
+  serial: 2
   tasks:
   - name: pinging all hosts
     ping:
