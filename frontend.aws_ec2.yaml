@@ -9,6 +9,6 @@ filters:
   instance-state-name: running
 keyed_groups:
   - key: tags.Name
-    seperator: ''
-    prefix: ''
-    leading_underscore: false
+    separator: ''
+    # prefix: ''
+    # leading_underscore: false
